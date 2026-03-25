@@ -1,0 +1,22 @@
+/**
+HEADER
+===========================
+*/
+
+header {
+  padding: 0;
+  height: auto;
+  background: $white;
+  @extend %clearfix;
+  text-align: center;
+  padding: 10px 0 5px 0;
+  z-index: 200;
+}
+
+.logo {
+  margin: 0;
+
+  > img {
+    width: 100px;
+  }
+}

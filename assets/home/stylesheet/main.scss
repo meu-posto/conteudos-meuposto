@@ -1,0 +1,41 @@
+@import "core/variables";
+@import "parts/header";
+@import "parts/calls";
+@import "parts/footer";
+@import "core/responsive";
+
+
+/**
+GENERAL
+===========================
+*/
+
+a:hover,
+header:hover {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+
+/* Generic */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $sans-serif;
+  background: $white;
+  margin: 0;
+  color: $gray-2;
+}
+
+
+/* Grid */
+
+.holder {
+  width: 80%;
+  margin: auto;
+
+  @media #{$smartphones-1} {
+    width: 94%;
+  }
+}

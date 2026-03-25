@@ -1,0 +1,51 @@
+#partners {
+  padding-bottom: 30px;
+  .holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2{
+    font-size: 40px;
+    text-transform: initial;
+    padding: 45px 0;
+    margin: 0;
+  }
+  .partnersbox{
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    flex-wrap: wrap;
+    img{
+      margin: 10px 0;
+      max-width: 200px;
+      object-fit: contain;
+      & + img {
+        margin-left: 20px;
+      }
+    }
+  }
+
+
+  @media #{$smartphones-1} {
+    h2 {
+      width: 100%;
+      font-size: 30px;
+      padding-right: 50px;
+      padding: 25px 0;
+      text-align: left;
+      margin-left: 10px;
+      line-height: 40px;
+    }
+    .partnersbox{
+      max-width: 100%;
+      img{
+        max-width: 150px;
+        margin: 20px 0;
+        & + img {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

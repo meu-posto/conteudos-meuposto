@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " pt-br, en" }}">
+
+{%- include head.html -%}
+{%- include leadboose.html -%}
+{%- include rdscript.html -%}
+{%- include adOpt.html -%}
+
+<body>
+
+
+  {{ content }}
+
+
+
+  <script src="/assets/revendedor/js/jquery.js"></script>
+  <script src="/assets/revendedor/js/main.js"></script>
+  {%- include drip.html -%}
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+@import "core/variables";
+
+@import "parts/header";
+@import "parts/main-banner";
+@import "parts/about";
+@import "parts/solution";
+@import "parts/resources";
+@import "parts/journey";
+@import "parts/testimonials";
+@import "parts/material";
+@import "parts/cta";
+@import "parts/forms";
+@import "parts/content";
+@import "parts/footer";
+@import "parts/newctas";
+@import "parts/faq";
+@import "parts/partners";
+
+@import "core/responsive";
+
+
+/**
+GENERAL
+===========================
+*/
+
+a:hover,
+header:hover {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+
+/* Generic */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $sans-serif;
+  background: $white;
+  margin: 0;
+  color: $gray-2;
+}
+
+p,
+li {
+  color: $gray-2;
+}
+
+p {
+  line-height: 32px;
+  font-size: $font-large;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 40px 0;
+  font-weight: bold;
+  font-size: $font-big-3;
+  letter-spacing: -1px;
+  color: $purple;
+
+  @media #{$smartphones-1} {
+    font-size: $font-big-3;
+  }
+}
+
+
+/* Grid */
+
+.holder {
+  width: 90%;
+  margin: auto;
+
+  @media #{$smartphones-1} {
+    width: 94%;
+  }
+}
+
+.column-01,
+.column-02 {
+  width: 48%;
+
+  @media #{$smartphones-1} {
+    width: 100% !important;
+  }
+}
+
+.columns {
+  @extend %clearfix;
+}
+
+.column-01 {
+  float: left;
+
+  @media #{$smartphones-1} {
+    float: none;
+  }
+}
+
+.column-02 {
+  float: right;
+
+  @media #{$smartphones-1} {
+    float: none;
+  }
+}

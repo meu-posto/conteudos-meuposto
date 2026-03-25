@@ -1,0 +1,98 @@
+/**
+JOURNEY
+===========================
+*/
+
+.journey {
+  margin-top: 100px;
+  @extend %clearfix;
+  min-height: 300px;
+
+  @media #{$smartphones-1} {
+    padding-bottom: 40px;
+    background: $white;
+    margin-top: 5px;
+    padding: 0 15px;
+  }
+
+  .journeybox{
+    display: flex;
+    flex-direction: row;
+    @media #{$tablets} {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .headbutton{
+    background-color: #660099 !important;
+    padding: 14px 15px !important;
+    width: 135px !important;
+  }
+
+  .description{
+    color: #555555;
+    font-size: $font-medium-2;
+    max-width: 378px;
+    line-height: 30px;
+    margin-bottom: 45px;
+    text-align: justify;
+    @media #{$tablets} {
+      margin-bottom: 25px;
+    }
+  }
+
+  .textbox{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 445px;
+    @media only screen and (min-width: 1600px){
+      margin-left: 10%;
+    }
+  }
+
+  .imgbox{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    @media #{$tablets} {
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  h2 {
+    font-size: $font-bigger;
+    letter-spacing: -2px;
+    text-align: left;
+    margin-bottom: 45px;
+    text-transform: initial;
+    @media #{$smartphones-1} {
+      font-size: $font-big-3;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      width: 200px;
+      letter-spacing: 1.3px;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  p {
+    font-weight: bold;
+    color: $purple;
+    line-height: 32px;
+    font-size: 18px;
+    // text-transform: uppercase;
+    width: 60%;
+    margin-bottom: 45px;
+    @media #{$smartphones-1} {
+      width: 100%;
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+/**
+MAIN BANNER
+===========================
+*/
+
+.main-banner {
+  height: 99vh;
+  background: #5c3195 url("/assets/revendedor/images/newImgs/meuposto-bg-img-hero-raw.jpg") 0 100% no-repeat;
+  background-size: cover;
+  padding: 170px 0 60px 0;
+  color: $white;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media #{$smartphones-1} {
+    height: auto;
+    padding: 40px 0 20px 0;
+    display: block;
+    height: 90vh;
+  }
+
+
+  .holder {
+    position: relative;
+    z-index: 100;
+  }
+
+  .banner-bg {
+    background: rgba($purple, .7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 50;
+  }
+
+  h1 {
+    font-size: $font-bigger-2;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #fff;
+    @media #{$smartphones-1} {
+      font-size: $font-bigger;
+      margin-bottom: 0;
+    }
+
+    br {
+      @media #{$smartphones-1} {
+        display: none;
+      }
+    }
+  }
+
+  p {
+    font-weight: 500;
+    color: $white;
+    margin: 50px 0 100px;
+    max-width: 460px;
+    @media #{$smartphones-1} {
+      max-width: 270px;
+      font-size: 20px;
+      margin: 20px 0 40px 0;
+    }
+    br {
+      @media #{$smartphones-1} {
+        display: none;
+      }
+    }
+  }
+
+
+}

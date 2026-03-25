@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+@import "minima/normalize";
+@import "minima/variables";
+@import "minima/layout";
+@import "minima/post-list";
+@import "minima/post";
+@import "minima/responsive";
+@import "../assets/revendedor/stylesheet/parts/footer";
+
+a:hover,
+header:hover {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+/* Generic */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $sans-serif;
+  background: $white;
+  margin: 0;
+  color: $gray-2;
+}
+
+a {
+  color: $purple;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+/* General */
+
+.wrapper,
+.holder {
+  width: 90%;
+  margin: auto;
+  color: black;
+  @media #{$smartphones-1} {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}

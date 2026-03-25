@@ -1,0 +1,77 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home_bg {
+  background-image: url("../../assets/img/bg/home-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #fff !important;
+}
+
+.navbar-default.menu-shrink {
+  background: #660099;
+}
+
+.navbar-default.menu-shrink li a {
+  color: #fff !important;
+}
+
+.navbar-default {
+  padding: 5px 0;
+}
+
+.navbar-nav a.link-outline,
+.navbar-nav a.link-outline:hover,
+.navbar-nav a.link-outline:focus {
+  background-color: white;
+  color: #4B1753 !important;
+  font-weight: bold;
+}
+
+.navbar-default.menu-shrink li a.link-outline {
+  color: #4B1753 !important;
+}
+
+.navbar-brand {
+  padding-top: 10px;
+}
+
+.navbar.meu-top {
+  background-color: #660099 !important;
+}
+
+@media only screen and (max-width:480px) {
+  .menu-top {
+    background-color: #3e2a5b
+  }
+}
+
+.single_about:hover i {
+  background: #660099 none repeat scroll 0 0;
+  border: 1px solid #660099;
+  color: #fff;
+}
+
+.single_about i {
+  border: 1px solid #00BFA5;
+  color: #00BFA5;
+}
+
+.download {
+  background: #00BFA5 none repeat scroll 0 0;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  /* background-color: #660099 !important; */
+  background-color: #ffffff !important;
+}
+
+.status-mes {
+  border-left: 5px solid #660099;
+}

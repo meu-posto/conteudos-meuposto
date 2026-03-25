@@ -1,0 +1,88 @@
+<section class="sitemap">
+  <div class="holder">
+    <div class="ft-col">
+      <img
+        src="/assets/revendedor/images/newImgs/logofooter.svg"
+        alt="aplicativo meuposto"
+      />
+      <ul>
+        <li>
+          <span class="foot-desc">
+            Conquiste mais clientes, gerencie suas atividades de qualquer lugar
+            e aumente a lucratividade do seu posto de forma prática e segura.
+          </span>
+        </li>
+      </ul>
+      <div class="footericons">
+        <a href="https://www.facebook.com/meupostoapp" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/meupostoapp/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/meu-posto-app/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="ft-col">
+      <h5>Meu Posto</h5>
+      <ul>
+        <li><a href="/revendedor#about">O que é ?</a></li>
+        <li><a href="/revendedor#resources">Recursos</a></li>
+        {% if page.show_testimonials == true %}
+        <li><a href="/revendedor#testimonials">Depoimentos</a></li>
+        {% endif %}
+        <li><a href="/revendedor#faq">Perguntas</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li>
+          <a href="https://conteudos.meuposto.app/vagas-meu-posto" target="_blank"
+            >Trabalhe conosco</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="ft-col">
+      <h5>Últimos Artigos</h5>
+      <ul>
+        {% for post in site.posts limit:6 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div>
+      <h5>Acesso</h5>
+      <ul>
+        <li>
+          <a href="#cta">Sou revendedor</a>
+        </li>
+        <li>
+          <a href="/app">Sou usuário do App</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="holder">
+    <strong> &copy; 2025 Meu Posto App</strong> - Todos os direitos reservados.<br /><br />
+    AGIX TECNOLOGIA LTDA - 21.524.611/0001-09
+  </div>
+  <div class="invertColorbutton">
+    <a
+      href="https://api.whatsapp.com/send?phone=554330030578"
+      class="headbutton w-0"
+      id="ctabottompage"
+    >
+      <span class="phrase">Fale agora com&nbsp<b>um consultor</b> </span>
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</footer>

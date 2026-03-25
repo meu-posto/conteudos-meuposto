@@ -1,0 +1,139 @@
+/**
+HEADER
+===========================
+*/
+
+header {
+  width: 100%;
+  height: 80px;
+  background: rgba($purple, 1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  @extend %clearfix;
+  z-index: 200;
+
+  @media #{$tablets} {
+    height: auto;
+    position: inherit;
+    left: none;
+    top: none;
+    padding: 7px 0;
+  }
+
+  nav {
+    display: block;
+    float: right;
+
+    @media #{$tablets} {
+      width: 100%;
+      display: none;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 31px 0 0 0;
+
+    @media #{$tablets} {
+      margin: 7px 5px 10px 5px
+    }
+  }
+
+  li {
+    font-size: $font-medium-2;
+    display: inline-block;
+    margin-left: 35px;
+
+    @media #{$tablets} {
+      display: block;
+      margin: 0 0 5px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgba($white, .7);
+      font-weight: bold;
+      position: relative;
+
+      &:hover {
+        color: rgba($white, 1);
+      }
+
+      @media #{$tablets} {
+        text-align: center;
+        font-weight: 500;
+        padding: 7px 10px;
+        border-radius: 10px;
+        height: 32px;
+        line-height: 32px;
+        background: rgba($white, .1);
+        display: block;
+        color: rgba($white, 1);
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
+
+  .buttons{
+    display: none;
+    @media #{$tablets} {
+      display: flex;
+      margin-top: 30px;
+      padding: 0 5px;
+      .headbutton{
+        padding: 12px 0;
+      }
+    }
+  }
+}
+
+.revendedor-home header {
+  background: none;
+}
+
+
+.w-0 {
+  width: 1000px !important;
+  height: 0px !important;
+  padding: 0 !important;
+  .phrase{
+    display: none !important;
+  }
+  i{
+    display: none;
+  }
+  @media #{$tablets} {
+    width: 300px !important;
+  }
+}
+
+.logo {
+  margin-top: 28px;
+  float: left;
+
+  @media #{$tablets} {
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+
+  > a img {
+    width: 160px;
+    float: left;
+
+    @media #{$tablets} {
+      width: 120px;
+    }
+  }
+}
+
+.menu-trigger {
+  display: none; /* Disable mobile menu trigger */
+}

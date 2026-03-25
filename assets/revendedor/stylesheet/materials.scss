@@ -1,0 +1,23 @@
+---
+---
+
+ul#materials-list {
+  list-style-type: none;
+
+  li {
+    float: left;
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+
+    img {
+      float: left;
+      width: 95%;
+    }
+
+    p {
+      clear: left;
+    }
+  }
+}

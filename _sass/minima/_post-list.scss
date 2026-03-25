@@ -1,0 +1,64 @@
+/**
+POST LIST
+===========================
+*/
+
+.post-list {
+  padding: 20px 0 30px 0;
+  margin: 0 auto;
+
+  li {
+    width: 30%;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 40px 10px;
+
+    @media #{$tablets} {
+      width: 45%;
+    }
+
+    @media #{$smartphones-1} {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .post-meta {
+    font-weight: bold;
+    font-size: $font-small;
+    color: $gray-2;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: $font-big;
+    line-height: 32px;
+    margin: 10px 0 5px 0;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      opacity: .8;
+
+      h3 {
+        color: $green;
+      }
+    }
+  }
+
+  p {
+    color: $gray-2;
+    font-size: $font-medium-2;
+    line-height: 25px;
+    margin: 0;
+  }
+}

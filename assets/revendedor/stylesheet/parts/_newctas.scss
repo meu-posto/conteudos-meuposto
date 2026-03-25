@@ -1,0 +1,144 @@
+.buttons {
+  display: flex;
+  .headbutton {
+    margin-right: 15px;
+    margin-bottom: 165px;
+    text-decoration: none;
+    background-color: #00CC99;
+    padding: 15px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    .phrase {
+      text-align: center;
+    }
+    .main {
+      font-weight: bold;
+    }
+  }
+  @media #{$smartphones-1} {
+    flex-direction: column;
+    .headbutton {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+}
+.head-imgs{
+  // position: absolute;
+  display: flex;
+  justify-content: center;
+  width: calc(100% + 400px);
+  & .app{
+    margin-top: -40px;
+  }
+  & .user{
+    margin-left: -80px;
+    margin-top: 167px;
+  }
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
+  @media screen and (min-width: 1600px) {
+    
+  }
+
+}
+.ctatext {
+  &:first-child {
+    margin-top: 20px;
+  }
+  &:not(:first-child) {
+    margin-top: -5px;
+  }
+  color: #40c5ab;
+  margin-bottom: 0;
+  font-size: 40px;
+  @media #{$smartphones-1} {
+    margin-top: 0px;
+  }
+}
+.invertColorbutton {
+  .headbutton {
+    text-decoration: none;
+    background-color: #5c3195;
+    padding: 12px 15px;
+    color: white;
+    display: flex;
+    width: 310px;
+    border-radius: 15px;
+    font-size: 18px;
+    line-height: 1.4;
+    .phrase {
+      display: flex;
+      align-items: center;
+      .fab {
+        margin-left: 10px;
+        font-size: 30px;
+      }
+    }
+    @media #{$smartphones-1} {
+      font-size: 15px;
+      width: 260px;
+      padding: 10px 8px;
+      .phrase {
+        .fab {
+          margin-left: 10px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  @media #{$smartphones-1} {
+    margin: 0;
+  }
+}
+.recursos {
+  text-decoration: none;
+}
+.justify-content-center {
+  justify-content: center;
+  @media #{$smartphones-1} {
+    align-items: center;
+  }
+}
+.justify-content-start {
+  justify-content: start;
+}
+.custom-content {
+  padding: 25px 0 !important;
+  background-color: #f3f5f6;
+  border-radius: 10px;
+  @media #{$smartphones-1} {
+    padding: 0 !important;
+  }
+}
+.modal {
+  display: flex;
+  .pipedriveWebFormsModal {
+    padding-top: 30px;
+    // padding-left: 10px;
+    background-color: #f3f5f6;
+  }
+  .video {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f5f6;
+  }
+  @media #{$smartphones-1} {
+    flex-direction: column;
+    .video {
+      margin-top: 20px;
+      background-color: #fff;
+    }
+  }
+}

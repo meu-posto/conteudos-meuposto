@@ -1,0 +1,21 @@
+# version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      args:
+        ARG_RUBY_VERSION: 3.4.1
+        ARG_LINUX_LOCALE: en_US.UTF-8
+        ARG_BUNDLE_VERSION: 2.5.19
+    working_dir: /home/user/meu-posto-site
+    volumes:
+      - .:/home/user/meu-posto-site
+      - bundle:/usr/local/bundle
+      - ~/.ssh:/home/user/.ssh
+      - ~/.gitconfig:/home/user/.gitconfig
+      - ~/.bash_history:/home/user/.bash_history
+    ports:
+      - 4000:4000
+    tty: true
+volumes:
+  bundle:

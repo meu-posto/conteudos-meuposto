@@ -1,0 +1,25 @@
+/**
+FOOTER
+===========================
+*/
+
+footer {
+  width: 100%;
+  @extend %clearfix;
+  padding: 40px 0;
+  text-align: center;
+  font-size: $font-medium-2;
+  background: $white;
+
+  ul {
+    padding: 10px 0 0 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: $font-medium;
+  }
+}

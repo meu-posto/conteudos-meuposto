@@ -1,0 +1,19 @@
+/**
+SOLUTION
+===========================
+*/
+
+.solution {
+  background: #251f63;
+  @extend %clearfix;
+  text-align: center;
+
+  img {
+    width: 100%;
+    margin-top: 10px;
+
+    @media #{$smartphones-1} {
+      width: 100%;
+    }
+  }
+}

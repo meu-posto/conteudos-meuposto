@@ -1,0 +1,101 @@
+/**
+CTA
+===========================
+*/
+
+.cta {
+  height: auto;
+  background-size: cover;
+  text-align: center;
+  padding: 90px 0;
+  color: $white;
+  box-sizing: border-box;
+  position: relative;
+
+  .ctabox{
+    background-color: #1A0067;
+    border-radius: 10px;
+    display: flex;
+    .textside{
+      width: 50%;
+      padding: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      h2{
+        font-size: $font-bigger-2;
+        text-transform: initial;
+        margin: 0;
+        text-align: left;
+        max-width: 340px;
+        color: white;
+      }
+      span{
+        font-size: 20px;
+        color: white;
+        margin-top: 50px;
+        max-width: 330px;
+        text-align: left;
+      }
+    }
+    .form-box{
+      padding: 30px 50px;
+      width: 1000px;
+      display: flex;
+      justify-content: center;
+    }
+    .formside{
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #ffffff50;
+      width: auto;
+      max-height: 750px;
+    }
+    @media #{$tablets} {
+      flex-direction: column;
+      .textside{
+        width: 100%;
+        padding: 30px 20px;
+        h2{
+          font-size: $font-big-3;
+          padding-right: 50px;
+          text-align: left;
+          line-height: 40px;
+          max-width: 210px;
+        }
+        span{
+          margin-top: 25px;
+        }
+      }
+      .form-box{
+        width: auto;
+      }
+      .formside{
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        padding: 20px 10px;
+      }
+    }
+  }
+
+  @media #{$smartphones-1} {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  label{
+    color: "#000" !important
+  }
+
+  .cta-form {
+    width: 500px;
+    padding-top: 10px;
+    margin: auto;
+
+    @media #{$smartphones-1} {
+      width: 100%;
+    }
+  }
+}

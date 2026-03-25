@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+  integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+<section class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-header" style="background: url({{ page.image }});"></div>
+
+  <article class="content">
+    <div class="wrapper">
+      <div class="content-entry">
+        <section class="post-content e-content" itemprop="articleBody">
+          <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+          <p class="post-meta">
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {%- assign date_format = site.minima.date_format | default: "%b
+              %-d, %Y" -%} {{ page.date | date: date_format }}
+            </time>
+            {%- if page.author -%} •
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
+                itemprop="name">{{ page.author | escape }}</span></span>
+            {%- endif -%}
+          </p>
+          {{ content }}
+        </section>
+
+        {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%}
+        {%- endif -%}
+
+        <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+      </div>
+      <!-- /content-entry -->
+
+      <aside class="sidebar">
+        <h3>Veja também</h3>
+        <ul class="aside-post-list">
+          {% for post in site.posts limit:6 %}
+          <li>
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          </li>
+          {% endfor %}
+        </ul>
+        <h3>Agende uma demonstração</h3>
+        <!-- <div
+          class="pipedriveWebForms"
+          data-pd-webforms="https://pipedrivewebforms.com/form/435875784d47622d40704948beb4dd6d3920886"
+        >
+          <script src="https://cdn.pipedriveassets.com/web-form-assets/webforms.min.js"></script> -->
+        <!-- <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/2TCta5Qt4J6ml6afmTenmJxcPdzioAuv1atj2fK44V9fBwSurZMhbrj2xY2uKikJJ"><script src="https://webforms.pipedrive.com/f/loader"></script></div> -->
+
+        <!-- <div role="main" id="form-blog-a921faba59c319f22e60"></div>
+          <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+          <script type="text/javascript"> new RDStationForms('form-blog-a921faba59c319f22e60', 'UA-136781579-1').createForm();</script> -->
+    </div>
+    </aside>
+    </div>
+  </article>
+</section>

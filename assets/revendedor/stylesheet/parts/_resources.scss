@@ -1,0 +1,159 @@
+/**
+RESOURCES
+===========================
+*/
+
+.resources {
+  padding: 0;
+  @extend %clearfix;
+  text-align: center;
+
+
+  h2{
+    font-size: $font-bigger;
+    text-transform: initial;
+    @media #{$tablets} {
+      font-size: $font-big-3;
+    }
+  }
+
+  ul {
+    padding: 20px 0 0 0;
+    margin: 0 0 -40px 0;
+  }
+
+  li {
+    width: 44%;
+    list-style-type: none;
+    display: inline-block;
+    text-align: left;
+    margin: 0 2% 50px 2%;
+    vertical-align: top;
+
+    @media #{$tablets} {
+      width: 100%;
+    }
+  }
+
+  i {
+    width: 100px;
+    height: 100px;
+    background: $purple;
+    border-radius: 50%;
+    text-align: center;
+    font-size: $font-bigger-3;
+    color: $white;
+    line-height: 100px;
+    float: left;
+
+    @media #{$tablets} {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      font-size: $font-bigger;
+    }
+  }
+
+  .resources-infos {
+    margin-left: 130px;
+
+    @media #{$tablets} {
+      margin-left: 90px;
+    }
+  }
+
+  h3 {
+    font-weight: bold;
+    color: $purple;
+    font-size: $font-big-2;
+    margin: 0 0 5px 0;
+
+    @media #{$tablets} {
+      font-size: $font-big;
+    }
+  }
+
+  p {
+    font-size: $font-medium-2;
+    margin: 0;
+    line-height: 30px;
+    color: $purple;
+
+    @media #{$tablets} {
+      font-size: $font-medium !important;
+      line-height: 22px;
+    }
+  }
+
+  .resource-item{
+    width: calc( (100%/4) - 40px);
+    height: 45vh;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 27px;
+    @media only screen and (max-width: 1200px){
+      width: calc( (100%/4) - 10px);
+      height: 55vh;
+      margin: 25px 5px;
+    }
+    @media #{$tablets} {
+      width: 100%;
+      height: 350px;
+    }
+    @media only screen and (min-width: 1600px){
+      width: calc( (100%/4) - 80px);
+      height: 40vh;
+    }
+  }
+
+  .resource-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .resource-img{
+    margin-top: -25px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    @media screen and (min-width: 1367px) {
+      height: 70px;
+      margin-top: -35px;
+    }
+  }
+
+  .resource-title{
+    color: #555;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 20px;
+  }
+
+  .resource-description{
+    margin: 10px 20px 0;
+    font-size: 16px;
+    line-height: 24px;
+    @media screen and (min-width: 1367px) {
+      margin: 10px 30px 0;
+      font-size: 18px;
+    }
+  }
+
+  .resource-cta{
+    color: #660099;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 19px;
+    margin: auto 0 40px;
+    text-decoration: none;
+  }
+}

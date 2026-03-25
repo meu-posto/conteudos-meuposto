@@ -1,0 +1,124 @@
+/**
+ABOUT
+===========================
+*/
+
+.about {
+  height: 80vh;
+  max-height: 600px;
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  
+  @extend %clearfix;
+  .img-box{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    img{
+      width: 406px;
+      margin-top: 110px;
+    }
+  }
+  .about-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px;
+    margin-bottom: 0;
+    h2 {
+      color: ($green);
+      font-size: 12px;
+      line-height: 40px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    .headline{
+      max-width: 335px;
+      font-size: ($font-bigger);
+      color: ($purple);
+      font-weight: bold;
+      margin-bottom: 45px;
+    }
+    .description-text{
+      max-width: 380px;
+      font-size: $font-medium-2;
+      font-weight: 500;
+      line-height: 30px;
+      color: #555;
+    }
+  }
+
+  @media #{$smartphones-1} {
+    max-height: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px;
+    height: auto;
+    .img-box{
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 100%;
+        margin-top: 0 !important;
+      }
+    }
+    .about-description{
+      text-align: left;
+      padding: 20px 0;
+      h2{
+        display: none;
+      }
+      .headline{
+        margin-bottom: 20px;
+          font-size: $font-big-3;
+      }
+    }
+  }
+
+
+  .buttons {
+    .headbutton{
+      margin-top: 20px;
+    }
+    @media #{$smartphones-1} {
+      width: 100%;
+    }
+  }
+
+  img {
+    width: 46%;
+    margin-bottom: 30px;
+    float: right;
+
+    @media #{$smartphones-1} {
+      float: none;
+      width: 300px;
+    }
+  }
+
+  p {
+    width: 40%;
+    font-size: $font-large;
+    line-height: 30px;
+    margin: auto;
+    margin-top: 0;
+    padding-top: 0;
+    float: right;
+
+    @media #{$smartphones-1} {
+      width: 100%;
+      font-size: $font-large;
+      line-height: 36px;
+      padding-top: 0;
+    }
+  }
+}
