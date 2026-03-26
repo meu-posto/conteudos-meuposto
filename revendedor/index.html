@@ -140,9 +140,9 @@ partners:
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800,900" rel="stylesheet" />
 
-  <link href="/assets/revendedor/stylesheet/normalize.css" rel="stylesheet" />
-  <link href="/assets/revendedor/public/stylesheet/main.css" rel="stylesheet" />
-  <link href="/assets/css/style-blog.css" rel="stylesheet" />
+  <link href="{{ site.baseurl }}/assets/revendedor/stylesheet/normalize.css" rel="stylesheet" />
+  <link href="{{ site.baseurl }}/assets/revendedor/public/stylesheet/main.css" rel="stylesheet" />
+  <link href="{{ site.baseurl }}/assets/css/style-blog.css" rel="stylesheet" />
 
 
   <!-- SEO -->
@@ -151,7 +151,7 @@ partners:
   <meta name="keywords" content="{{page.keywords}}" />
 
   <!-- Favicons -->
-  <link rel="icon" type="image/png" href="/assets/revendedor/images/icon.png" />
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/revendedor/images/icon.png" />
 
   <!-- Open Graph Tags -->
   <meta data-react-helmet="true" property="og:type" content="website" />
@@ -214,15 +214,15 @@ partners:
   <header>
     <div class="holder-header">
       <div class="logo">
-        <a href="/">
-          <img src="/assets/revendedor/images/newImgs/meu-posto-logo.svg" alt="logo do aplicativo meu posto" />
+        <a href="{{ site.baseurl }}/">
+          <img src="{{ site.baseurl }}/assets/revendedor/images/newImgs/meu-posto-logo.svg" alt="logo do aplicativo meu posto" />
         </a>
       </div>
       <nav class="menu">
         <ul>
           <!-- <li class="item-menu"><a href="#about" class="button-menu">Soluções </a></li> -->
-          <li class="item-menu"><a href="/blog/" class="button-menu">Blog</a></li>
-          <li class="item-menu"><a href="/casos-de-sucesso/" class="button-menu">Cases de Sucesso</a></li>
+          <li class="item-menu"><a href="{{ site.baseurl }}/blog/" class="button-menu">Blog</a></li>
+          <li class="item-menu"><a href="{{ site.baseurl }}/casos-de-sucesso/" class="button-menu">Cases de Sucesso</a></li>
           <li class="item-menu"><a class="button-contato" href="http://wa.me/15557442185?utm_source=contato_site&utm_content=whatsapp" target="_blank">Contato</a>
           </li>
         </ul>
@@ -332,7 +332,7 @@ partners:
         </div>
       </div>
       <div class="right-map">
-        <img src="assets/revendedor/images/MeuPosto-mapa.png" alt="Mapa do Meu Posto" />
+        <img src="{{ site.baseurl }}/assets/revendedor/images/MeuPosto-mapa.png" alt="Mapa do Meu Posto" />
       </div>
     </div>
     </ section>
@@ -345,7 +345,7 @@ partners:
       <div class="container-whitelabel">
         <div class="whitelabel-content">
           <div class="whitelabel-image">
-            <img src="assets/revendedor/images/Layer_1.png" alt="Celular com sua marca" />
+            <img src="{{ site.baseurl }}/assets/revendedor/images/Layer_1.png" alt="Celular com sua marca" />
 
           </div>
 
@@ -358,10 +358,10 @@ partners:
 
             <p id="whitelabel-subtitle-logo">CLIENTES QUE CONFIAM NO MP WHITELABEL</p>
             <div class="whitelabel-logos">
-              <img src="assets/revendedor/images/bons-amigos-logo.png" alt="Bons Amigos" />
-              <img src="assets/revendedor/images/santa-luzia-logo.png" alt="Santa Luzia" />
-              <img src="assets/revendedor/images/agrisal-logo.png" alt="Agrisal" />
-              <img src="assets/revendedor/images/pontao-nascer-sol-logo.png" alt="Ponta Nascer Sol" />
+              <img src="{{ site.baseurl }}/assets/revendedor/images/bons-amigos-logo.png" alt="Bons Amigos" />
+              <img src="{{ site.baseurl }}/assets/revendedor/images/santa-luzia-logo.png" alt="Santa Luzia" />
+              <img src="{{ site.baseurl }}/assets/revendedor/images/agrisal-logo.png" alt="Agrisal" />
+              <img src="{{ site.baseurl }}/assets/revendedor/images/pontao-nascer-sol-logo.png" alt="Ponta Nascer Sol" />
             </div>
 
             <a href="http://wa.me/15557442185?utm_source=contato_site&utm_content=whatsapp" class="cta-button">QUERO UM APP COM A MINHA MARCA</a>
@@ -384,7 +384,7 @@ partners:
             <a href="http://wa.me/15557442185?utm_source=contato_site&utm_content=whatsapp" class="cta-button-virtual-store">Quero saber mais</a>
           </div>
           <div class="image-content">
-            <img src="assets/revendedor/images/phone-virtual-store.png" alt="Aplicativo no celular ao lado de loja"
+            <img src="{{ site.baseurl }}/assets/revendedor/images/phone-virtual-store.png" alt="Aplicativo no celular ao lado de loja"
               class="phone-image">
           </div>
         </div>
@@ -421,7 +421,7 @@ partners:
           {%- endfor -%}
         </ul>
       </div>
-      <a class="blog-link" href="/blog">VER MAIS</a>
+      <a class="blog-link" href="{{ site.baseurl }}/blog">VER MAIS</a>
     </section>
 
     <!-- Section blog end -->
@@ -456,7 +456,7 @@ partners:
 
         <div class="footer-top">
           <div class="footer-brand">
-            <img src="/assets/revendedor/images/newImgs/meu-posto-logo.svg" alt="Meu Posto Logo" class="footer-logo">
+            <img src="{{ site.baseurl }}/assets/revendedor/images/newImgs/meu-posto-logo.svg" alt="Meu Posto Logo" class="footer-logo">
             <p class="brand-description">Solução de relacionamento, comunicação e gestão para postos de combustível</p>
             <div class="social-icons">
               <a href="https://www.facebook.com/meupostoapp" target="_blank" aria-label="Facebook">
@@ -498,8 +498,8 @@ partners:
               <h4>A EMPRESA</h4>
               <ul>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/casos-de-sucesso">Cases de Sucesso</a></li>
+                <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                <li><a href="{{ site.baseurl }}/casos-de-sucesso">Cases de Sucesso</a></li>
                 <!--
                 <li><a href="#">Imprensa</a></li>
                 <li><a
@@ -545,9 +545,9 @@ partners:
     </footer>
     <!-- Footer end -->
 
-    <script src="/assets/revendedor/js/jquery.js"></script>
-    <script src="/assets/revendedor/js/main.js"></script>
-    <script src="/assets/js/sweetalert2.all.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/revendedor/js/jquery.js"></script>
+    <script src="{{ site.baseurl }}/assets/revendedor/js/main.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/sweetalert2.all.min.js"></script>
 
     {%- include drip.html -%}
 

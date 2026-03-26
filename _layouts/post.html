@@ -37,7 +37,7 @@ layout: default
         <ul class="aside-post-list">
           {% for post in site.posts limit:6 %}
           <li>
-            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
           </li>
           {% endfor %}
         </ul>

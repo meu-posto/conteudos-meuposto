@@ -35,9 +35,9 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800,900" rel="stylesheet" />
 
-  <link href="/assets/revendedor/stylesheet/normalize.css" rel="stylesheet" />
-  <link href="/assets/revendedor/public/stylesheet/main.css" rel="stylesheet" />
-  <link href="/assets/css/style-blog.css" rel="stylesheet" />
+  <link href="{{ site.baseurl }}/assets/revendedor/stylesheet/normalize.css" rel="stylesheet" />
+  <link href="{{ site.baseurl }}/assets/revendedor/public/stylesheet/main.css" rel="stylesheet" />
+  <link href="{{ site.baseurl }}/assets/css/style-blog.css" rel="stylesheet" />
 
 
   <!-- SEO -->
@@ -46,7 +46,7 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
   <meta name="keywords" content="{{page.keywords}}" />
 
   <!-- Favicons -->
-  <link rel="icon" type="image/png" href="/assets/revendedor/images/icon.png" />
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/revendedor/images/icon.png" />
 
   <!-- Open Graph Tags -->
   <meta data-react-helmet="true" property="og:type" content="website" />
@@ -109,8 +109,8 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
   <header class="cta-header">
     <div class="holder-header">
       <div class="logo">
-        <a href="/index.html">
-          <img src="/assets/revendedor/images/newImgs/meu-posto-logo.svg" alt="logo do aplicativo meu posto" />
+        <a href="{{ site.baseurl }}/index.html">
+          <img src="{{ site.baseurl }}/assets/revendedor/images/newImgs/meu-posto-logo.svg" alt="logo do aplicativo meu posto" />
         </a>
       </div>
       <nav class="menu">
@@ -140,7 +140,7 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
         </ul>
       </div>
       <div class="cta-right">
-        <img src="/assets/images/homem_com_celular.png" alt="Demonstração do aplicativo" class="image-placeholder">
+        <img src="{{ site.baseurl }}/assets/images/homem_com_celular.png" alt="Demonstração do aplicativo" class="image-placeholder">
 
         <p>Cadastre-se para receber uma proposta personalizada para a sua necessidade</p>
         <a href="http://wa.me/15557442185?utm_source=contato_site&utm_content=whatsapp" class="cta-button"
@@ -165,9 +165,9 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
 
   <!-- Footer end -->
 
-  <script src="/assets/revendedor/js/jquery.js"></script>
-  <script src="/assets/revendedor/js/main.js"></script>
-  <script src="/assets/js/sweetalert2.all.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/revendedor/js/jquery.js"></script>
+  <script src="{{ site.baseurl }}/assets/revendedor/js/main.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/sweetalert2.all.min.js"></script>
 
   {%- include drip.html -%}
 

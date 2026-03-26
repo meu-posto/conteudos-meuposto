@@ -116,7 +116,7 @@ HOME CALLS
 }
 
 .call-01 {
-  background: url("/assets/home/images/home-site-01.jpg");
+  background: url("../../images/home-site-01.jpg");
 }
 
 .call-01 .call-infos {
@@ -155,7 +155,7 @@ HOME CALLS
 }
 
 .call-02 {
-  background: url("/assets/home/images/home-site-02.jpg");
+  background: url("../../images/home-site-02.jpg");
 }
 
 .call-02 .call-infos {

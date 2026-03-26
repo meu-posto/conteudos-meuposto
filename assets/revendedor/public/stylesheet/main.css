@@ -216,7 +216,7 @@ MAIN BANNER
 */
 .main-banner {
   height: 99vh;
-  background: #5c3195 url("/assets/revendedor/images/newImgs/meuposto-bg-img-hero-raw.jpg") 0 100% no-repeat;
+  background: #5c3195 url("../../images/newImgs/meuposto-bg-img-hero-raw.jpg") 0 100% no-repeat;
   background-size: cover;
   padding: 170px 0 60px 0;
   color: #fff;
@@ -3258,7 +3258,7 @@ li.post-list-item p {
 
 .header-station {
   height: 715px;
-  background: url('/assets/revendedor/images/image_bg_posto.jpg') center;
+  background: url('../../images/image_bg_posto.jpg') center;
   background-size: cover;
   background-repeat:
     no-repeat;

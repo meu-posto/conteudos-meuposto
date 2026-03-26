@@ -15,12 +15,12 @@ layout: null
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
   <title>Formulário de Contato</title>
-  <link href="/assets/revendedor/stylesheet/normalize.css" rel="stylesheet" />
-  <link href="/assets/revendedor/public/stylesheet/main.css" rel="stylesheet" />
-  <link href="/assets/css/style-blog.css" rel="stylesheet" />
+  <link href="{{ site.baseurl }}/assets/revendedor/stylesheet/normalize.css" rel="stylesheet" />
+  <link href="{{ site.baseurl }}/assets/revendedor/public/stylesheet/main.css" rel="stylesheet" />
+  <link href="{{ site.baseurl }}/assets/css/style-blog.css" rel="stylesheet" />
   <!-- Folha de Estilos Personalizada -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="/assets/revendedor/images/icon.png" />
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/revendedor/images/icon.png" />
 
 </head>
 
@@ -28,18 +28,18 @@ layout: null
   <header>
     <div class="holder-header">
       <div class="logo">
-        <a href="/">
-          <img src="/assets/revendedor/images/newImgs/meu-posto-logo.svg" alt="logo do aplicativo meu posto" />
+        <a href="{{ site.baseurl }}/">
+          <img src="{{ site.baseurl }}/assets/revendedor/images/newImgs/meu-posto-logo.svg" alt="logo do aplicativo meu posto" />
         </a>
       </div>
       <nav class="menu">
         <ul>
           <!-- <li class="item-menu"><a href="#about" class="button-menu">Soluções </a></li> -->
           <li class="item-menu">
-            <a href="/blog/" class="button-menu">Blog</a>
+            <a href="{{ site.baseurl }}/blog/" class="button-menu">Blog</a>
           </li>
           <li class="item-menu">
-            <a href="/casos-de-sucesso/" class="button-menu">Cases de Sucesso</a>
+            <a href="{{ site.baseurl }}/casos-de-sucesso/" class="button-menu">Cases de Sucesso</a>
           </li>
           <li class="item-menu">
             <a class="button-contato" href="http://wa.me/15557442185?utm_source=contato_site&utm_content=whatsapp"
@@ -187,7 +187,7 @@ layout: null
 
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="/assets/revendedor/images/newImgs/meu-posto-logo.svg" alt="Meu Posto Logo" class="footer-logo" />
+          <img src="{{ site.baseurl }}/assets/revendedor/images/newImgs/meu-posto-logo.svg" alt="Meu Posto Logo" class="footer-logo" />
           <p class="brand-description">
             Solução de relacionamento, comunicação e gestão para postos de
             combustível
@@ -234,8 +234,8 @@ layout: null
             <h4>A EMPRESA</h4>
             <ul>
               <li><a href="#">Sobre</a></li>
-              <li><a href="/blog">Blog</a></li>
-              <li><a href="/casos-de-sucesso">Cases de Sucesso</a></li>
+              <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+              <li><a href="{{ site.baseurl }}/casos-de-sucesso">Cases de Sucesso</a></li>
               <!--
                 <li><a href="#">Imprensa</a></li>
                 <li><a
@@ -286,8 +286,8 @@ layout: null
 
   <!-- Biblioteca da Máscara (IMask.js) -->
   <script src="https://unpkg.com/imask"></script>
-  <script src="/assets/revendedor/js/jquery.js"></script>
-  <script src="/assets/revendedor/js/main.js"></script>
+  <script src="{{ site.baseurl }}/assets/revendedor/js/jquery.js"></script>
+  <script src="{{ site.baseurl }}/assets/revendedor/js/main.js"></script>
   <script src="script.js"></script>
 </body>
 
