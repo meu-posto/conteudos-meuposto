@@ -20,8 +20,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Com o aplicativo, você abastece e como reconhecimento, recebe dinheiro de
   volta em cada abastecimento e ainda tem acesso aos benefícios exclusivos
   oferecidos pelos parceiros do seu posto!
-baseurl: "/conteudos-meuposto" # the subpath of your site, e.g. /blog
-url: "https://meu-posto.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://conteudos.meuposto.app" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
 url_app_apple: "https://itunes.apple.com/br/app/meu-posto-app/id1439485794?mt=8"
