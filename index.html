@@ -108,11 +108,18 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
       border-color: rgba(255,255,255,0.7);
     }
 
+    /* ============ LAYOUT ============ */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      min-height: 100dvh;
+    }
+
     /* ============ HERO ============ */
     .lp-hero {
       position: relative;
-      min-height: 100vh;
-      min-height: 100dvh;
+      flex: 1;
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
