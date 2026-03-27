@@ -17,10 +17,10 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
   <meta charset="utf-8" />
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/revendedor/images/icon.png" />
@@ -46,52 +46,88 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
 
   {%- include leadboose.html -%}
   {%- include google-analytics.html -%}
-
+  <script>
+    window.location.href = "https://www.meuposto.app/blog/";
+  </script>
   <!-- Facebook Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init','2986730294985776');fbq('track','PageView');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      }; if (!f._fbq) f._fbq = n;
+      n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(window,
+      document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2986730294985776'); fbq('track', 'PageView');
   </script>
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WZQC97RG');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WZQC97RG');</script>
 
   <style>
     /* ============ RESET & BASE ============ */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
     body {
       font-family: 'Montserrat', sans-serif;
       color: #1a1a2e;
       background: #fff;
       overflow-x: hidden;
     }
-    img { max-width: 100%; height: auto; display: block; }
-    a { text-decoration: none; color: inherit; }
-    ul { list-style: none; }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
 
     /* ============ HEADER ============ */
     .lp-header {
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 100;
       padding: 20px 32px;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
+
     .lp-header__logo img {
       height: 36px;
       filter: brightness(0) invert(1);
     }
+
     .lp-header__cta {
       color: #fff;
       font-size: 14px;
@@ -102,6 +138,7 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
       background: #5c2d91;
       transition: all 0.25s ease;
     }
+
     .lp-header__cta:hover {
       background: #4a2278;
     }
@@ -132,20 +169,24 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
       position: relative;
       overflow: hidden;
     }
+
     .lp-hero__left::before {
       content: '';
       position: absolute;
-      top: -30%; right: -20%;
-      width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(255,157,0,0.12) 0%, transparent 70%);
+      top: -30%;
+      right: -20%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 157, 0, 0.12) 0%, transparent 70%);
       border-radius: 50%;
       pointer-events: none;
     }
+
     .lp-hero__tag {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(255,255,255,0.12);
+      background: rgba(255, 255, 255, 0.12);
       backdrop-filter: blur(8px);
       color: #fff;
       font-size: 13px;
@@ -156,17 +197,28 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
       width: fit-content;
       letter-spacing: 0.02em;
     }
+
     .lp-hero__tag::before {
       content: '';
-      width: 8px; height: 8px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       background: #00CC99;
       animation: tag-pulse 2s ease infinite;
     }
+
     @keyframes tag-pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.4;
+      }
     }
+
     .lp-hero__title {
       color: #fff;
       font-size: clamp(28px, 3.2vw, 42px);
@@ -176,10 +228,12 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
       position: relative;
       z-index: 1;
     }
+
     .lp-hero__title em {
       color: #FF9D00;
       font-style: normal;
     }
+
     .lp-hero__features {
       display: flex;
       flex-direction: column;
@@ -187,27 +241,32 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
       position: relative;
       z-index: 1;
     }
+
     .lp-hero__features li {
       display: flex;
       align-items: flex-start;
       gap: 14px;
-      color: rgba(255,255,255,0.92);
+      color: rgba(255, 255, 255, 0.92);
       font-size: 16px;
       font-weight: 500;
       line-height: 1.5;
     }
+
     .lp-hero__features li .check {
       flex-shrink: 0;
-      width: 24px; height: 24px;
+      width: 24px;
+      height: 24px;
       border-radius: 50%;
-      background: rgba(0,204,153,0.2);
+      background: rgba(0, 204, 153, 0.2);
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 1px;
     }
+
     .lp-hero__features li .check svg {
-      width: 14px; height: 14px;
+      width: 14px;
+      height: 14px;
       color: #00CC99;
     }
 
@@ -222,23 +281,28 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
       gap: 32px;
       position: relative;
     }
+
     .lp-hero__right::before {
       content: '';
       position: absolute;
-      bottom: -10%; left: -10%;
-      width: 300px; height: 300px;
-      background: radial-gradient(circle, rgba(92,45,145,0.06) 0%, transparent 70%);
+      bottom: -10%;
+      left: -10%;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(92, 45, 145, 0.06) 0%, transparent 70%);
       border-radius: 50%;
       pointer-events: none;
     }
+
     .lp-hero__img {
       border-radius: 16px;
-      box-shadow: 0 20px 60px rgba(61,29,92,0.15);
+      box-shadow: 0 20px 60px rgba(61, 29, 92, 0.15);
       max-width: 420px;
       width: 100%;
       position: relative;
       z-index: 1;
     }
+
     .lp-hero__text {
       text-align: center;
       font-size: 18px;
@@ -262,35 +326,49 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
       color: #fff;
       background: linear-gradient(135deg, #00CC99, #00b385);
       box-shadow:
-        0 8px 32px rgba(0,204,153,0.3),
-        0 0 0 0 rgba(0,204,153,0.4);
+        0 8px 32px rgba(0, 204, 153, 0.3),
+        0 0 0 0 rgba(0, 204, 153, 0.4);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       animation: cta-pulse 3s ease-in-out infinite;
       position: relative;
       z-index: 1;
     }
+
     .lp-cta:hover {
       transform: translateY(-3px) scale(1.04);
-      box-shadow: 0 12px 40px rgba(0,204,153,0.4);
+      box-shadow: 0 12px 40px rgba(0, 204, 153, 0.4);
       animation: none;
     }
+
     .lp-cta:active {
       transform: translateY(0) scale(1);
     }
-    .lp-cta svg { flex-shrink: 0; }
+
+    .lp-cta svg {
+      flex-shrink: 0;
+    }
+
     @keyframes cta-pulse {
-      0%, 100% { box-shadow: 0 8px 32px rgba(0,204,153,0.3), 0 0 0 0 rgba(0,204,153,0.4); }
-      50% { box-shadow: 0 8px 32px rgba(0,204,153,0.3), 0 0 0 14px rgba(0,204,153,0); }
+
+      0%,
+      100% {
+        box-shadow: 0 8px 32px rgba(0, 204, 153, 0.3), 0 0 0 0 rgba(0, 204, 153, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 8px 32px rgba(0, 204, 153, 0.3), 0 0 0 14px rgba(0, 204, 153, 0);
+      }
     }
 
     /* ============ FOOTER ============ */
     .lp-footer {
       background: #1e0a33;
-      color: rgba(255,255,255,0.6);
+      color: rgba(255, 255, 255, 0.6);
       text-align: center;
       padding: 28px 24px;
       font-size: 13px;
     }
+
     .lp-footer__links {
       display: flex;
       justify-content: center;
@@ -298,12 +376,16 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
       flex-wrap: wrap;
       margin-bottom: 12px;
     }
+
     .lp-footer__links a {
       color: #00CC99;
       font-weight: 500;
       transition: color 0.2s;
     }
-    .lp-footer__links a:hover { color: #33e6b8; }
+
+    .lp-footer__links a:hover {
+      color: #33e6b8;
+    }
 
     /* ============ ANIMATIONS ============ */
     .fade-up {
@@ -311,72 +393,154 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
       transform: translateY(24px);
       transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     .fade-up.visible {
       opacity: 1;
       transform: translateY(0);
     }
-    .stagger-1 { transition-delay: 0.1s; }
-    .stagger-2 { transition-delay: 0.2s; }
-    .stagger-3 { transition-delay: 0.3s; }
-    .stagger-4 { transition-delay: 0.35s; }
-    .stagger-5 { transition-delay: 0.4s; }
-    .stagger-6 { transition-delay: 0.45s; }
-    .stagger-7 { transition-delay: 0.5s; }
-    .stagger-8 { transition-delay: 0.55s; }
+
+    .stagger-1 {
+      transition-delay: 0.1s;
+    }
+
+    .stagger-2 {
+      transition-delay: 0.2s;
+    }
+
+    .stagger-3 {
+      transition-delay: 0.3s;
+    }
+
+    .stagger-4 {
+      transition-delay: 0.35s;
+    }
+
+    .stagger-5 {
+      transition-delay: 0.4s;
+    }
+
+    .stagger-6 {
+      transition-delay: 0.45s;
+    }
+
+    .stagger-7 {
+      transition-delay: 0.5s;
+    }
+
+    .stagger-8 {
+      transition-delay: 0.55s;
+    }
 
     /* ============ RESPONSIVE ============ */
 
     /* Tablet */
     @media (max-width: 1024px) {
-      .lp-hero { grid-template-columns: 1fr; min-height: auto; }
-      .lp-hero__left { padding: 100px 40px 48px; }
-      .lp-hero__right { padding: 48px 40px 56px; }
-      .lp-hero__img { max-width: 340px; }
+      .lp-hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .lp-hero__left {
+        padding: 100px 40px 48px;
+      }
+
+      .lp-hero__right {
+        padding: 48px 40px 56px;
+      }
+
+      .lp-hero__img {
+        max-width: 340px;
+      }
     }
 
     /* Mobile */
     @media (max-width: 640px) {
-      .lp-header { padding: 16px 20px; }
-      .lp-header__logo img { height: 30px; }
-      .lp-header__cta { padding: 8px 18px; font-size: 13px; }
+      .lp-header {
+        padding: 16px 20px;
+      }
 
-      .lp-hero__left { padding: 88px 24px 40px; }
-      .lp-hero__title { font-size: 26px; margin-bottom: 28px; }
-      .lp-hero__features li { font-size: 15px; }
-      .lp-hero__features li .check { width: 22px; height: 22px; }
+      .lp-header__logo img {
+        height: 30px;
+      }
 
-      .lp-hero__right { padding: 36px 24px 48px; gap: 24px; }
-      .lp-hero__img { max-width: 280px; }
-      .lp-hero__text { font-size: 16px; }
+      .lp-header__cta {
+        padding: 8px 18px;
+        font-size: 13px;
+      }
 
-      .lp-cta { padding: 16px 36px; font-size: 16px; width: 100%; justify-content: center; }
+      .lp-hero__left {
+        padding: 88px 24px 40px;
+      }
 
-      .lp-footer__links { gap: 16px; }
+      .lp-hero__title {
+        font-size: 26px;
+        margin-bottom: 28px;
+      }
+
+      .lp-hero__features li {
+        font-size: 15px;
+      }
+
+      .lp-hero__features li .check {
+        width: 22px;
+        height: 22px;
+      }
+
+      .lp-hero__right {
+        padding: 36px 24px 48px;
+        gap: 24px;
+      }
+
+      .lp-hero__img {
+        max-width: 280px;
+      }
+
+      .lp-hero__text {
+        font-size: 16px;
+      }
+
+      .lp-cta {
+        padding: 16px 36px;
+        font-size: 16px;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .lp-footer__links {
+        gap: 16px;
+      }
     }
 
     /* Reduced motion */
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
+
+      *,
+      *::before,
+      *::after {
         animation-duration: 0.01ms !important;
         transition-duration: 0.01ms !important;
       }
-      .fade-up { opacity: 1; transform: none; }
+
+      .fade-up {
+        opacity: 1;
+        transform: none;
+      }
     }
   </style>
 </head>
 
 <body>
   <!-- GTM noscript -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZQC97RG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZQC97RG" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- Header -->
   <header class="lp-header">
     <a href="{{ site.baseurl }}/" class="lp-header__logo">
       <img src="{{ site.baseurl }}/assets/revendedor/images/newImgs/meu-posto-logo.svg" alt="Meu Posto" />
     </a>
-    <a href="https://wa.me/15557442185?utm_source=contato_site&utm_content=whatsapp"
-       target="_blank" rel="noopener" class="lp-header__cta">
+    <a href="https://wa.me/15557442185?utm_source=contato_site&utm_content=whatsapp" target="_blank" rel="noopener"
+      class="lp-header__cta">
       Contato
     </a>
   </header>
@@ -392,27 +556,45 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
 
       <ul class="lp-hero__features">
         <li class="fade-up stagger-2">
-          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5" />
+            </svg></span>
           Cashback em cada abastecimento
         </li>
         <li class="fade-up stagger-3">
-          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5" />
+            </svg></span>
           Promoções e sorteios sem custo extra
         </li>
         <li class="fade-up stagger-4">
-          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5" />
+            </svg></span>
           Aplicativo personalizado com a sua marca
         </li>
         <li class="fade-up stagger-5">
-          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5" />
+            </svg></span>
           Recuperação de clientes inativos
         </li>
         <li class="fade-up stagger-6">
-          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5" />
+            </svg></span>
           Push messages, SMS e WhatsApp
         </li>
         <li class="fade-up stagger-7">
-          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5" />
+            </svg></span>
           Campanhas prontas com prêmios atrativos
         </li>
       </ul>
@@ -420,18 +602,19 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
 
     <div class="lp-hero__right">
       <img src="{{ site.baseurl }}/assets/images/homem_com_celular.png"
-           alt="Frentista usando o aplicativo Meu Posto no celular"
-           class="lp-hero__img fade-up stagger-2" />
+        alt="Frentista usando o aplicativo Meu Posto no celular" class="lp-hero__img fade-up stagger-2" />
 
       <p class="lp-hero__text fade-up stagger-3">
         Receba uma proposta personalizada para a necessidade do seu posto
       </p>
 
-      <a href="https://wa.me/15557442185?utm_source=contato_site&utm_content=whatsapp"
-         target="_blank" rel="noopener" class="lp-cta fade-up stagger-4">
+      <a href="https://wa.me/15557442185?utm_source=contato_site&utm_content=whatsapp" target="_blank" rel="noopener"
+        class="lp-cta fade-up stagger-4">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-          <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 01-4.243-1.214l-.252-.157-2.625.78.78-2.625-.157-.252A8 8 0 1112 20z"/>
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          <path
+            d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 01-4.243-1.214l-.252-.157-2.625.78.78-2.625-.157-.252A8 8 0 1112 20z" />
         </svg>
         Fale conosco
       </a>
@@ -451,21 +634,21 @@ socialImg: https://www.meuposto.app/assets/revendedor/images/icon.png
 
   <!-- Fade-in on scroll -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       var els = document.querySelectorAll('.fade-up');
       if (!window.IntersectionObserver) {
-        els.forEach(function(el) { el.classList.add('visible'); });
+        els.forEach(function (el) { el.classList.add('visible'); });
         return;
       }
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
             observer.unobserve(entry.target);
           }
         });
       }, { threshold: 0.15 });
-      els.forEach(function(el) { observer.observe(el); });
+      els.forEach(function (el) { observer.observe(el); });
     });
   </script>
 
